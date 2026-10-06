@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: catgo
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: catgo-db
+          property: connectionString
+      - key: NODE_ENV
+        value: production
+databases:
+  - name: catgo-db
+    plan: free
