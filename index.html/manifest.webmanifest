@@ -1,0 +1,10 @@
+{
+  "name":"CatGO",
+  "short_name":"CatGO",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#0e1117",
+  "theme_color":"#10131a",
+  "description":"Catch cats in the real world.",
+  "icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
